@@ -20,7 +20,7 @@ class QuoteItem(Base):
     __tablename__ = 'quote_items'
 
     id: Mapped[str] = mapped_column(String(36), primary_key=True, default= _uuid)
-    request_id: Mapped[str] = mapped_column(ForeignKey('quote_requests.id'), index=True)
+    request_id: Mapped[str] = mapped_column(ForeignKey("quote_requests.id"), index=True)
     name: Mapped[str] = mapped_column(String(512))
     description: Mapped[str] = mapped_column(Text)
     quantity: Mapped[int] = mapped_column(Integer, default=1)

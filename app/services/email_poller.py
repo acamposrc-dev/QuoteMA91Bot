@@ -15,7 +15,7 @@ from email.mime.text import MIMEText
 from app.core.config import settings
 from app.core.logging import get_logger
 from app.db.session import SessionLocal
-from app.models.quote import QuoteRequest, RequestSource, RequestStatus
+from app.models import QuoteRequest, RequestSource, RequestStatus
 
 log = get_logger(__name__)
 SCOPES = ["https://www.googleapis.com/auth/gmail.modify"]

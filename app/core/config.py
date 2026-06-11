@@ -38,7 +38,7 @@ class Settings(BaseSettings):
 
     # Emails Config
 
-    poll_interval_minuts: int = 15
+    poll_interval_minutes: int = 15
     email_credentials_json: str = "secrets/email_credentials.json"
     email_token_json: str = "secrets/email_token.json"
     quote_subject_keywords: str = "cotizacion,cotización,rfq,solicitud de compra"

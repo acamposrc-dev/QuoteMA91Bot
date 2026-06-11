@@ -1,12 +1,7 @@
 # app/models/__init__.py
 
 from app.db.base import Base
-import enums
-from .quote_item import QuoteItem
-from .quote_request import QuoteRequest
-from .item_option import ItemOption
-from .search_log import SearchLog
-from .llm_log import LLMLog
+from .quote_request import RequestSource, RequestStatus, ItemStatus, ParseMethod, QuoteItem,QuoteRequest, ItemOption, SearchLog, LLMLog
 
 
 __all__ = [
@@ -19,4 +14,5 @@ __all__ = [
     "ItemOption",
     "SearchLog",
     "LLMLog",
+    "RequestSource", "RequestStatus", "ItemStatus", "ParseMethod"
 ]
